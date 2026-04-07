@@ -1,0 +1,428 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Charianne Q. Abecia — Full Stack Developer</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- jQuery via CDN (must load before own script) -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <!-- ===== VISITOR GREETING BANNER ===== -->
+    <div id="greeting-banner" class="greeting-banner hidden">
+      <span id="greeting-text"></span>
+      <button id="close-greeting" class="close-btn">&times;</button>
+    </div>
+
+    <!-- ===== DARK MODE TOGGLE (Bonus) ===== -->
+    <button id="dark-mode-toggle" class="dark-toggle" title="Toggle dark mode">
+      <span id="dark-icon">🌙</span>
+    </button>
+
+    <!-- ===== NAVIGATION ===== -->
+    <nav id="navbar">
+      <div class="nav-inner">
+        <span class="nav-logo">AR.</span>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#" id="hire-me-btn" class="hire-btn">Hire Me</a>
+      </div>
+    </nav>
+
+    <!-- ===== HERO / ABOUT ===== -->
+    <section id="about" class="section hero-section">
+      <div class="hero-content">
+        <div class="hero-image-wrap">
+          <img
+            src="assets/me.jpg/me.jfif"
+            alt="Profile photo of Charianne Q. Abecia"
+            class="profile-img"
+            id="profile-img"
+          />
+          <div class="hero-ring"></div>
+        </div>
+        <div class="hero-text">
+          <p class="hero-label">👋 Hello, I'm</p>
+          <h1 id="hero-name">Charianne Q. Abecia</h1>
+          <h2 class="hero-title">Full Stack Developer</h2>
+          <p class="hero-summary">
+            Passionate software developer with 3+ years of experience building
+            scalable web applications. I specialize in modern JavaScript
+            frameworks, clean architecture, and intuitive user experiences.
+            Currently seeking opportunities to grow and contribute to impactful
+            projects.
+          </p>
+          <div class="hero-btns">
+            <a href="#contact" class="btn btn-primary">Get In Touch</a>
+            <a href="#projects" class="btn btn-outline">View Projects</a>
+          </div>
+          <div class="hero-badges">
+            <span class="badge">🌏 Bukidnon, PH</span>
+            <span class="badge">💼 Open to Work</span>
+            <span class="badge">⚡ Available Now</span>
+          </div>
+        </div>
+      </div>
+      <!-- Decorative blobs -->
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+    </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="section">
+      <div class="section-inner">
+        <h2 class="section-title">Education</h2>
+        <div class="section-line"></div>
+
+        <div class="edu-timeline">
+          <div class="edu-card">
+            <div class="edu-icon">🎓</div>
+            <div class="edu-body">
+              <h3>Tertiary Level</h3>
+              <p class="edu-school">
+                University of Science and Technology of Southern Philippines
+              </p>
+              <p class="edu-meta">
+                2021 – 2025 &nbsp;·&nbsp; Cagayan de Oro City
+              </p>
+              <p class="edu-desc">
+                Relevant coursework: Web Systems & Technologies, Data
+                Structures, Database Management Systems, Software Engineering,
+                Mobile Application Development.
+              </p>
+            </div>
+          </div>
+
+          <div class="edu-card">
+            <div class="edu-icon">📘</div>
+            <div class="edu-body">
+              <h3>Secondary Level</h3>
+              <p class="edu-school">
+                Saint Paul Academy of Malitbog Bukidnon Inc.
+              </p>
+              <p class="edu-meta">
+                2019 – 2021 &nbsp;·&nbsp; Malitbog Bukidnon
+              </p>
+              <p class="edu-desc">Senior High - GAS Strand</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications Table -->
+        <h3 class="subsection-title">Certifications & Training</h3>
+        <table class="cert-table">
+          <thead>
+            <tr>
+              <th>Certification</th>
+              <th>Issuer</th>
+              <th>Year</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Responsive Web Design</td>
+              <td>freeCodeCamp</td>
+              <td>2023</td>
+              <td><span class="cert-badge active">Active</span></td>
+            </tr>
+            <tr>
+              <td>JavaScript Algorithms & DS</td>
+              <td>freeCodeCamp</td>
+              <td>2023</td>
+              <td><span class="cert-badge active">Active</span></td>
+            </tr>
+            <tr>
+              <td>React – The Complete Guide</td>
+              <td>Udemy</td>
+              <td>2024</td>
+              <td><span class="cert-badge active">Active</span></td>
+            </tr>
+            <tr>
+              <td>AWS Cloud Practitioner</td>
+              <td>Amazon Web Services</td>
+              <td>2024</td>
+              <td><span class="cert-badge active">Active</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section skills-section">
+      <div class="section-inner">
+        <h2 class="section-title">Skills</h2>
+        <div class="section-line"></div>
+
+        <!-- Search / Filter -->
+        <div class="skills-search-wrap">
+          <input
+            type="text"
+            id="skill-search"
+            class="skill-search"
+            placeholder="🔍 Search a skill..."
+          />
+        </div>
+
+        <!-- Skill Categories -->
+        <div class="skill-categories" id="skill-categories">
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skill-tags" data-category="frontend">
+              <span class="skill-tag" data-skill="html5">HTML5</span>
+              <span class="skill-tag" data-skill="css3">CSS3</span>
+              <span class="skill-tag" data-skill="javascript">JavaScript</span>
+              <span class="skill-tag" data-skill="jquery">jQuery</span>
+              <span class="skill-tag" data-skill="react">React</span>
+              <span class="skill-tag" data-skill="tailwind">Tailwind CSS</span>
+              <span class="skill-tag" data-skill="sass">Sass/SCSS</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <div class="skill-tags" data-category="backend">
+              <span class="skill-tag" data-skill="nodejs">Node.js</span>
+              <span class="skill-tag" data-skill="express">Express.js</span>
+              <span class="skill-tag" data-skill="php">PHP</span>
+              <span class="skill-tag" data-skill="python">Python</span>
+              <span class="skill-tag" data-skill="rest">REST APIs</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Database & Tools</h3>
+            <div class="skill-tags" data-category="tools">
+              <span class="skill-tag" data-skill="mysql">MySQL</span>
+              <span class="skill-tag" data-skill="mongodb">MongoDB</span>
+              <span class="skill-tag" data-skill="git">Git & GitHub</span>
+              <span class="skill-tag" data-skill="figma">Figma</span>
+              <span class="skill-tag" data-skill="vscode">VS Code</span>
+              <span class="skill-tag" data-skill="docker">Docker</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill Bars (Bonus) -->
+        <div class="skillbars-wrap">
+          <button id="show-skill-bars" class="btn btn-primary">
+            📊 Show Skill Levels
+          </button>
+          <div id="skill-bars" class="skill-bars hidden">
+            <div class="skill-bar-item">
+              <span class="skill-bar-label">HTML / CSS</span>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="95"></div>
+              </div>
+              <span class="skill-bar-pct">95%</span>
+            </div>
+            <div class="skill-bar-item">
+              <span class="skill-bar-label">JavaScript / jQuery</span>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="88"></div>
+              </div>
+              <span class="skill-bar-pct">88%</span>
+            </div>
+            <div class="skill-bar-item">
+              <span class="skill-bar-label">React</span>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="80"></div>
+              </div>
+              <span class="skill-bar-pct">80%</span>
+            </div>
+            <div class="skill-bar-item">
+              <span class="skill-bar-label">Node.js / Express</span>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="75"></div>
+              </div>
+              <span class="skill-bar-pct">75%</span>
+            </div>
+            <div class="skill-bar-item">
+              <span class="skill-bar-label">Databases (MySQL / MongoDB)</span>
+              <div class="skill-bar-track">
+                <div class="skill-bar-fill" data-width="72"></div>
+              </div>
+              <span class="skill-bar-pct">72%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS / PORTFOLIO ===== -->
+    <section id="projects" class="section">
+      <div class="section-inner">
+        <h2 class="section-title">Projects</h2>
+        <div class="section-line"></div>
+
+        <!-- Filter Buttons (Bonus) -->
+        <div class="filter-btns" id="filter-btns">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="ui">UI/UX</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Projects loaded from JSON via fetch (JS feature) -->
+        </div>
+
+        <!-- "View More" toggle button (JS feature) -->
+        <div class="view-more-wrap">
+          <button id="view-more-btn" class="btn btn-outline">
+            View More Projects ▼
+          </button>
+        </div>
+        <div id="extra-projects" class="extra-projects hidden">
+          <!-- Extra projects appended via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section contact-section">
+      <div class="section-inner">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="section-line"></div>
+        <p class="contact-sub">
+          Have a project in mind? Let's build something great together.
+        </p>
+
+        <div class="contact-layout">
+          <div class="contact-info">
+            <div class="contact-info-item">
+              <span class="contact-icon">📧</span>
+              <div>
+                <p class="contact-label">Email</p>
+                <a href="mailto:abecia.charianne@gmail.com"
+                  >abecia.charianne@gmail.com</a
+                >
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-icon">📱</span>
+              <div>
+                <p class="contact-label">Phone</p>
+                <p>+63 912 345 6789</p>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-icon">🔗</span>
+              <div>
+                <p class="contact-label">LinkedIn</p>
+                <a href="https://LinkedIn.com/abeciacharianne" target="_blank"
+                  >linked.com/abeciacharianne</a
+                >
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <span class="contact-icon">💻</span>
+              <div>
+                <p class="contact-label">GitHub</p>
+                <a href="https://github.com/abeciacharianne" target="_blank"
+                  >github.com/abeciacharianne</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form (HTML requirement: form with Name, Email, Message, Send) -->
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="fname"
+                >Full Name <span class="required">*</span></label
+              >
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Juan dela Cruz"
+              />
+              <span class="field-error" id="fname-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="femail"
+                >Email Address <span class="required">*</span></label
+              >
+              <input
+                type="email"
+                id="femail"
+                name="femail"
+                placeholder="juan@example.com"
+              />
+              <span class="field-error" id="femail-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="fsubject">Subject</label>
+              <input
+                type="text"
+                id="fsubject"
+                name="fsubject"
+                placeholder="Project Collaboration"
+              />
+            </div>
+            <div class="form-group">
+              <label for="fmessage"
+                >Message <span class="required">*</span></label
+              >
+              <textarea
+                id="fmessage"
+                name="fmessage"
+                rows="5"
+                placeholder="Tell me about your project..."
+              ></textarea>
+              <span class="field-error" id="fmessage-error"></span>
+            </div>
+            <button type="submit" class="btn btn-primary full-width">
+              <span id="send-label">Send Message ✉️</span>
+            </button>
+            <div id="form-success" class="form-success hidden">
+              ✅ Thanks! Your message was sent successfully. I'll respond within
+              24 hours.
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <p>© 2025 Charianne Abecia. Built with HTML, CSS, JavaScript & jQuery.</p>
+      <p class="footer-sub">IT 223 – Web Systems and Technologies · USTP</p>
+    </footer>
+
+    <!-- ===== HIRE ME POPUP (Bonus) ===== -->
+    <div id="hire-popup" class="hire-popup hidden">
+      <div class="hire-popup-inner">
+        <button id="close-hire-popup" class="close-btn popup-close">
+          &times;
+        </button>
+        <h3>🚀 Let's Work Together!</h3>
+        <p>
+          I'm currently available for freelance projects, internships, and
+          full-time opportunities.
+        </p>
+        <ul class="hire-list">
+          <li>✅ Full Stack Web Development</li>
+          <li>✅ UI/UX Design & Prototyping</li>
+          <li>✅ API Development & Integration</li>
+          <li>✅ Website Maintenance & Optimization</li>
+        </ul>
+        <a href="#contact" id="popup-contact-link" class="btn btn-primary"
+          >Send a Message</a
+        >
+      </div>
+    </div>
+    <div id="hire-overlay" class="hire-overlay hidden"></div>
+
+    <!-- Own JS script (after jQuery) -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

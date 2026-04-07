@@ -1,0 +1,64 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "ShopEasy E-Commerce Platform",
+      "description": "A full-stack e-commerce web app with product listing, cart, user authentication, and Stripe payment integration. Built for a local retail business.",
+      "type": "web",
+      "stack": ["React", "Node.js", "MongoDB", "Stripe API"],
+      "github": "#",
+      "live": "#",
+      "extra": false
+    },
+    {
+      "id": 2,
+      "title": "TaskFlow Project Manager",
+      "description": "A Kanban-style project management tool with drag-and-drop boards, team collaboration features, and real-time notifications.",
+      "type": "web",
+      "stack": ["Vue.js", "Express", "PostgreSQL", "Socket.io"],
+      "github": "#",
+      "live": "#",
+      "extra": false
+    },
+    {
+      "id": 3,
+      "title": "FitTrack Mobile App",
+      "description": "A React Native fitness tracking application with workout logging, progress charts, custom meal planner, and BMI calculator.",
+      "type": "mobile",
+      "stack": ["React Native", "Firebase", "Chart.js"],
+      "github": "#",
+      "live": "#",
+      "extra": false
+    },
+    {
+      "id": 4,
+      "title": "Bank Dashboard UI Kit",
+      "description": "A comprehensive Figma design system and UI kit for banking applications, including 60+ components with accessibility compliance.",
+      "type": "ui",
+      "stack": ["Figma", "Auto Layout", "Design Tokens"],
+      "github": "#",
+      "live": "#",
+      "extra": false
+    },
+    {
+      "id": 5,
+      "title": "Weather Forecast PWA",
+      "description": "A progressive web application that fetches real-time weather data from OpenWeatherMap API with offline capability and push notifications.",
+      "type": "web",
+      "stack": ["HTML5", "CSS3", "JavaScript", "Service Workers"],
+      "github": "#",
+      "live": "#",
+      "extra": true
+    },
+    {
+      "id": 6,
+      "title": "EventHub Event App",
+      "description": "A cross-platform mobile app for discovering local events, booking tickets, and connecting with event organizers.",
+      "type": "mobile",
+      "stack": ["Flutter", "Dart", "Firebase", "Google Maps"],
+      "github": "#",
+      "live": "#",
+      "extra": true
+    }
+  ]
+}
